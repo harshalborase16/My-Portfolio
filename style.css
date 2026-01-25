@@ -35,10 +35,15 @@ html,body{
     font-size: 35px;
 }
 .nav{
-    margin-top: 30px;
+    margin: 10px 0 10px ;
     margin-left: 1%;
     font-size: 25px;
+    border: 1px solid black;
+    border-radius: 20px;
+    padding: 16px 10px 10px 10px;
+    background: #f2f2f2;
 }
+
 .lg{
     margin-left: 124px;
 }
@@ -51,6 +56,27 @@ html,body{
     margin: 15px;
     text-decoration: none ;
     color:#1188E7 ;
+}
+
+@media(max-width: 900px){
+  nav {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: #fff;
+    flex-direction: column;
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    display: none;
+  }
+  nav.active {
+    display: flex;
+  }
+  .hamburger {
+    display: flex;
+  }
 }
 
 
@@ -66,6 +92,10 @@ html,body{
     margin-top: 60px;
     font-size: 30px;
     line-height: 35px;
+}
+.pad1:hover{
+    transform: translateY(-8px);
+  box-shadow: 0 0px 0px rgba(0,0,0,0.1);
 }
 .pad1{
     color: #1188E7;
@@ -303,8 +333,8 @@ a{
 }
 
 .card:hover {
-  transform: translateY(-8px);
-  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(0,0,0,0.1);
 }
 
 @media (max-width: 900px) {
@@ -347,6 +377,10 @@ a{
 .pbox{
     background-color:#f2f2f2 ;
 }
+.pbox:hover{
+    transform: translateY(-8px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.1);
+}
 .pbox img{
 
     height: 40rem;
@@ -368,7 +402,7 @@ text-align: center;
 }
 
 
-/* -----------certficate */
+                            /* -----------certficate */
 .certficate{
     display: flex;
     margin-left: 107px;
@@ -378,8 +412,11 @@ text-align: center;
     text-align: center;
     font-size: 25px;
 }
-.cert{
-    
+
+.cert:hover{
+     transform: translateY(-8px);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+
 }
 
 .cert img{
