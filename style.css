@@ -1,3 +1,7 @@
+:root{
+ --first-color:#F9C61B;
+ --second-color:#1188E7;
+}
 *{
     margin: 0;
     padding: 0;
@@ -13,13 +17,13 @@ html,body{
 
 .circle1{
     border-radius: 50%;
-    background-color: rgb(209, 209, 42);
+    background-color:var(--first-color);
     width: 35px;
     height: 35px;
 }
 .circle2{
     border-radius: 50%;
-    background-color: blue;
+    background-color: #1188E7;
     width: 35px;
     height: 35px;
        
@@ -34,7 +38,6 @@ html,body{
     margin-top: 30px;
     margin-left: 1%;
     font-size: 25px;
-    
 }
 .lg{
     margin-left: 124px;
@@ -47,7 +50,7 @@ html,body{
 .hp{
     margin: 15px;
     text-decoration: none ;
-    color: rgb(45, 45, 227);
+    color:#1188E7 ;
 }
 
 
@@ -56,7 +59,7 @@ html,body{
     display: flex;
 }
 
-.p{
+.pt{
     padding: 30px 25px 0px 175px;
 }
 .pad{
@@ -65,14 +68,14 @@ html,body{
     line-height: 35px;
 }
 .pad1{
-    color: blue;
+    color: #1188E7;
     line-height: 45px;
     font-size: 35px;
 }
 .pad2{
    font-size: 55px;
    padding: 0px;
-   color: rgb(209, 209, 42);
+   color: #F9C61B;
 }
 .pad3{
     font-size: 25px;
@@ -80,27 +83,27 @@ html,body{
 }
 .img1 img{
     height: 350px;
-    width: 350px;
+    width: 380px;
     margin: 45px 91px -12px 150px;
     border-radius: 50px;
 
 }
 .resume-btn{
     border-radius: 999px;
-    border: 1.5px solid rgb(209, 209, 42);
+    border: 1.5px solid #F9C61B;
     display: inline-block;
     padding: 10px 35px;
     margin-top: 0px;
     margin-bottom: 90px;
     background-color: transparent;
-    color: blue;
+    color:#1188E7;
     text-decoration: none;
     font-size: 20px;
     font-weight: 600;
     transition: 0.3s ease;
 }
 .resume-btn:hover{
-    background-color: rgb(209, 209, 42);
+    background-color: #F9C61B;
     transform: scale(1.05);
 }
 .but{
@@ -118,7 +121,7 @@ a{
 }
 .icon1{
     text-decoration: none;
-    color: blue;
+    color: #1188E7;
 }
 
 
@@ -131,9 +134,9 @@ a{
 
 .imgsecond{
     height: 350px;
-    width: 350px;
+    width: 380px;
     border-radius: 50px;
-    margin-left: 200px;
+    margin-left: 175px;
     margin-top: 55px ;
 
 } 
@@ -171,7 +174,7 @@ a{
 }
 #collage {
   font-size: 24px;
-  color: blue;
+  color: #1188E7;
   margin-right: 8px;
 }
 
@@ -199,7 +202,7 @@ a{
    text-align: center;
    font-size: 25px;
    margin: 10px;
-   margin-bottom: 70px;
+   margin-bottom: 60px;
 }
 .skills {
     width: 700px;
@@ -234,7 +237,7 @@ a{
 
 .fill {
     height: 100%;
-    background-color: rgb(209, 209, 42);
+    background-color: #fbd559;
     border-radius: 10px;
     position: relative;
 }
@@ -246,7 +249,7 @@ a{
     width: 14px;
     height: 14px;
     background: #fff;
-    border: 3px solid blue;
+    border: 3px #1188E7;
     border-radius: 50%;
     transform: translate(50%, -50%);
 }
@@ -274,14 +277,14 @@ a{
 .service-box {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 30px;
+  gap: 42px;
 
 }
 
 .card {
   background: #f2f2f2;
   padding: 70px 0px 80px 0px ;
-  border-radius: 15px;
+  border-radius: 200px;
   transition: 0.3s;
 }
 
@@ -315,3 +318,73 @@ a{
     grid-template-columns: 1fr;
   }
 }             
+
+
+
+                                              /* PROJECT */
+
+.project{
+    display: inline;
+}
+.project h2{
+    font-size: 35px;
+    margin-bottom: 25px;
+    text-align: center;
+    margin-top: 15px;
+}
+.project p{
+     margin-bottom: 70px;
+  font-size: 25px;
+  text-align: center;
+}
+
+.projectbox{
+    display: flex;
+    gap: 30px;
+    justify-content:center ;
+    margin-bottom: 80px;
+}
+.pbox{
+    background-color:#f2f2f2 ;
+}
+.pbox img{
+
+    height: 40rem;
+    width: 22rem;
+    border-radius: 35px;
+    padding: 0px 15px 15px 15px;
+}
+.pbox h4{
+text-align: center;
+padding: 15px 10px 10px 10px;
+font-size: 20px;
+
+}
+
+.bio{
+padding: 10px 10px 10px 10px;
+font-size: 15px;
+text-align: center;
+}
+
+
+/* -----------certficate */
+.certficate{
+    display: flex;
+    margin-left: 107px;
+    margin-top: 50px;
+}
+.bioo{
+    text-align: center;
+    font-size: 25px;
+}
+.cert{
+    
+}
+
+.cert img{
+      height: 15rem;
+    width: 25rem;
+    border-radius: 35px;
+    padding: 0px 15px 15px 15px;
+}
