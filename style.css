@@ -15,49 +15,70 @@ html,body{
                                                       /* NAV  */
 
 
-.circle1{
+:root {
+  --first-color: #F9C61B;
+}
+
+
+.circle1{ 
     border-radius: 50%;
-    background-color:var(--first-color);
+    background-color: var(--first-color);
     width: 35px;
     height: 35px;
+  position: relative;
 }
 .circle2{
     border-radius: 50%;
     background-color: #1188E7;
     width: 35px;
     height: 35px;
-       
-}
-.logonav{
-    display: flex;
-    padding: 18px 99px;
-    margin-top: 7px;
-    font-size: 35px;
-}
-.nav{
-    margin: 10px 0 10px ;
-    margin-left: 1%;
-    font-size: 25px;
-    border: 1px solid black;
-    border-radius: 20px;
-    padding: 16px 10px 10px 10px;
-    background: #f2f2f2;
-}
-
-.lg{
-    margin-left: 124px;
+    position: relative;
+    left: -10px;
 }
 
 .linenav{
     display: flex;
-    margin-top: 35px;
-}
-.hp{
-    margin: 15px;
-    text-decoration: none ;
-    color:#1188E7 ;
+    align-items: center;
+    padding: 10px 50px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: rgba(242, 242, 242, 0.8); 
+    backdrop-filter: blur(10px);
+    z-index: 1000;
+    border-radius: 0 0 20px 20px; 
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
 }
 
+.logonav{
+    display: flex;
+    align-items: center;
+    font-size: 35px;
+}
+.nav{
+    font-size: 25px;
+    border: 1px solid transparent;
+    border-radius: 20px;
+    padding: 16px 10px 10px 10px;
+    background: #d7d2d2;
+    display: flex;
+    gap: 15px;
+    transition: box-shadow 0.3s ease;
+    margin-left: 165px;
+}
+
+.nav:hover{
+    box-shadow: 0 10px 10px rgb(179, 174, 174);
+}
+
+.hp{
+    text-decoration: none;
+    color: black;
+}
+body {
+    padding-top: 120px; 
+}
 @media(max-width: 900px){
   nav {
     position: absolute;
@@ -77,7 +98,17 @@ html,body{
   .hamburger {
     display: flex;
   }
+  .linenav {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 10px 20px;
+  }
+  .nav {
+    margin-left: 0;
+    width: 100%;
+  }
 }
+
 
 
                                                                 /* HOME */
@@ -117,6 +148,17 @@ html,body{
     margin: 45px 91px -12px 150px;
     border-radius: 50px;
 
+}
+.img1{
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeln 3s forwards;
+}
+@keyframes fadeln{
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
 }
 .resume-btn{
     border-radius: 999px;
@@ -260,7 +302,7 @@ a{
 }
 
 .bar:hover .fill {
-    box-shadow: 0 0 15px rgb(3, 8, 247);
+    box-shadow: 0 0 15px rgb(108, 110, 235);
     filter: brightness(1.2);
     transform: scaleY(1.2);
 }
@@ -410,7 +452,7 @@ text-align: center;
 }
 .bioo{
     text-align: center;
-    font-size: 25px;
+    font-size: 21px;
 }
 
 .cert:hover{
@@ -425,3 +467,96 @@ text-align: center;
     border-radius: 35px;
     padding: 0px 15px 15px 15px;
 }
+
+                                                 /* contact */
+
+
+.c{
+    text-align: center;
+    margin: 100px 0 30px 0;
+    font-size: 35px;
+}
+
+.contact-container {
+  display: flex;
+  max-width: 1000px;
+  width: 90%;
+  gap: 50px;
+  padding: 40px;
+  margin-left: 200px;
+}
+
+.contact-text {
+  flex: 1;
+  padding-top: 80px;
+}
+
+.contact-text h1 {
+  font-size: 3rem;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  font-weight: 800;
+}
+
+.contact-text p {
+  color: #555;
+  line-height: 1.6;
+  max-width: 400px;
+}
+
+.contact-form {
+  flex: 1;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+.form-group label {
+  display: block;
+  font-size: 0.9rem;
+  font-weight: bold;
+  margin-bottom: 8px;
+}
+
+.form-group label span {
+  color: #333;
+}
+
+input, textarea {
+  width: 100%;
+  padding: 15px;
+  border: 1px solid #eee;
+  border-radius: 8px;
+  background-color: #fafafa;
+  font-size: 1rem;
+  box-sizing: border-box; 
+}
+
+.submit-btn {
+   background-color: white;
+  color: var(--second-color);
+  border:1.5px solid var(--first-color);
+  padding: 12px 40px;
+  border-radius: 25px;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: pointer;
+ transition: 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #e5bd20;
+  transform: scale(1.05s);
+}
+
+@media (max-width: 768px) {
+  .contact-container {
+    flex-direction: column;
+    text-align: center;
+  }
+  .contact-text p {
+    margin: 0 auto 30px;
+  }
+}    
+
