@@ -6,7 +6,8 @@
     margin: 0;
     padding: 0;
     box-sizing:border-box border  ;
-}
+    font-family: serif
+  }
 html,body{
     width: 100%;
     height: 100%;
@@ -26,6 +27,7 @@ html,body{
     width: 35px;
     height: 35px;
   position: relative;
+
 }
 .circle2{
     border-radius: 50%;
@@ -39,7 +41,8 @@ html,body{
 .linenav{
     display: flex;
     align-items: center;
-    padding: 10px 50px;
+    justify-content: space-around;
+    /* padding: 10px 50px; */
     position: fixed;
     top: 0;
     left: 0;
@@ -47,17 +50,20 @@ html,body{
     background: rgba(242, 242, 242, 0.8); 
     backdrop-filter: blur(10px);
     z-index: 1000;
-    border-radius: 0 0 20px 20px; 
+    /* border-radius: 0 0 20px 20px;  */
     box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    margin: 10px;
+    height: 65px;
 }
 
 .logonav{
     display: flex;
     align-items: center;
-    font-size: 35px;
+    font-size: 30px;
+    cursor: pointer;
 }
 .nav{
-    font-size: 25px;
+    font-size: 20px;
     border: 1px solid transparent;
     border-radius: 20px;
     padding: 16px 10px 10px 10px;
@@ -65,9 +71,16 @@ html,body{
     display: flex;
     gap: 15px;
     transition: box-shadow 0.3s ease;
-    margin-left: 165px;
+    /* margin-left: 165px; */
+  
 }
-
+.nav2{
+  margin-top: -5px;
+}
+.hp:hover{
+  color: var(--second-color);
+  transform: scale(2);
+}
 .nav:hover{
     box-shadow: 0 10px 10px rgb(179, 174, 174);
 }
@@ -125,13 +138,14 @@ body {
     line-height: 35px;
 }
 .pad1:hover{
-    transform: translateY(-8px);
+    transform: translateY(-2px);
   box-shadow: 0 0px 0px rgba(0,0,0,0.1);
 }
 .pad1{
     color: #1188E7;
     line-height: 45px;
     font-size: 35px;
+    transition: 0.6s;
 }
 .pad2{
    font-size: 55px;
@@ -418,6 +432,8 @@ a{
 }
 .pbox{
     background-color:#f2f2f2 ;
+    border-radius: 25px;
+    transition: 0.3s;
 }
 .pbox:hover{
     transform: translateY(-8px);
@@ -425,15 +441,17 @@ a{
 }
 .pbox img{
 
-    height: 40rem;
-    width: 22rem;
+    height: 25rem;
+    width: 19rem;
+    object-fit: fill;
     border-radius: 35px;
-    padding: 0px 15px 15px 15px;
+    padding: 15px;
 }
 .pbox h4{
 text-align: center;
 padding: 15px 10px 10px 10px;
 font-size: 20px;
+color: rgb(164, 164, 5);
 
 }
 
@@ -449,6 +467,13 @@ text-align: center;
     display: flex;
     margin-left: 107px;
     margin-top: 50px;
+    /* transition: 0.3s */
+    
+    ;
+}
+.cert{
+  transition: 0.3s;
+  border-radius: 25px;
 }
 .bioo{
     text-align: center;
@@ -465,7 +490,9 @@ text-align: center;
       height: 15rem;
     width: 25rem;
     border-radius: 35px;
-    padding: 0px 15px 15px 15px;
+    padding:  15px;
+    
+
 }
 
                                                  /* contact */
@@ -585,7 +612,7 @@ input, textarea {
 }
 .ft{
   display: flex;
-  margin: 30px 0 0 22px;
+  margin: 30px 0 0 52px;
 }
 .mx{
   font-size: 35px;
@@ -593,22 +620,22 @@ input, textarea {
 .na{
   display: flex;
   padding: 0px 0px 0px 0px;
-  margin: 10px 0px 0px 345px;
+  margin: 10px 0px 0px 290px;
 }
 .hp1{
   text-decoration: none;
-  font-size: 15px;
+  font-size: 16px;
   margin: 5px;
 }
 .vb{
-  margin: 1px 0px 0px 700px;
+  margin: 1px 0px 0px 705px;
 }
 .icon5{
   text-decoration: none;
   color: var(--first-color);
 }
 .gh{
-  margin: -3px 0px 0px 300px;
+  margin: -3px 0px 0px 258px;
 }
 .bt{
     background-color: var(--first-color);
@@ -620,4 +647,10 @@ input, textarea {
     font-weight: 600;
     cursor: pointer;
     transition: 0.3s ease;
+}
+.endline{
+  background-color: var(--first-color);
+}
+.endcol{
+  color: white;
 }
